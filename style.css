@@ -131,7 +131,7 @@ input:not(:focus):not(:placeholder-shown):invalid {
 }
 
 #no-error {
-    display: none;
+    display: block;
 }
 
 input:valid {
