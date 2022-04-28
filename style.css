@@ -8,8 +8,9 @@ body {
 }
 
 h2 {
-    margin: 0;
+    margin: 0px 0px 20px 0px;
     padding: 0;
+    font-size: 24px;
 }
 
 #right {
@@ -44,7 +45,7 @@ h2 {
 #card {
     position: relative;
     background-color: #fff;
-    padding: 60px;
+    padding: 40px 60px 60px 60px;
     width: max(200px, 100%);
     max-width: 100%;
     display: flex;
