@@ -19,39 +19,38 @@
             <div id="card">
 
                 <h2>Sign Up Today</h2>
-                <div id="form">
-                    <div class="input-wrap" id="user">
-                        <label for="username">USERNAME</label>
-                        <input type="text" id="username" name="username" placeholder=' ' required>
+                <form action="">
+                    <div id="form">
+                        <div class="input-wrap" id="user">
+                            <label for="username">USERNAME</label>
+                            <input type="text" id="username" name="username" placeholder=' ' required>
+                        </div>
+                        <div class="input-wrap" id='mail'>
+                            <label for="e-mail">E-MAIL</label>
+                            <input type="email" id='e-mail' name='e-mail' placeholder=' ' required>
+                            <p class='error' id='error-mail'>*Not a valid e-mail.</p>
+                        </div>
+                        <div class="input-wrap" id="pass">
+                            <label for="pass-word"> PASSWORD</label>
+                            <input type="password" id="pass-word" name="pass-word" placeholder=' ' minlength="8" maxlength="20" required>
+                            <p class="guideline">*Must be between 8 - 20 characters.</p>
+                            <p class='error' id='error-pass'>*Not a valid password.</p>
+                        </div>
+                        <div class="input-wrap" id='confirm'>
+                            <label for="confirm-pass">CONFIRM PASSWORD</label>
+                            <input type="password" id='confirm-pass' name='confirm-pass' placeholder=' ' required>
+                            <p class="guideline">*Passwords must match.</p>
+                            <p class='error' id="error-confirm">*Passwords do not match.</p>
+                        </div>
                     </div>
-
-                    <div class="input-wrap" id='mail'>
-                        <label for="e-mail">E-MAIL</label>
-                        <input type="email" id='e-mail' name='e-mail' placeholder=' ' required>
-                        <p class='error' id='error-mail'>*Not a valid e-mail.</p>
-                    </div>
-
-                    <div class="input-wrap" id="pass">
-                        <label for="pass-word"> PASSWORD</label>
-                        <input type="password" id="pass-word" name="pass-word" placeholder=' ' minlength="8" maxlength="20" required>
-                        <p class="guideline">*Must be between 8 - 20 characters.</p>
-                        <p class='error' id='error-pass'>*Not a valid password.</p>
-                    </div>
-
-                    <div class="input-wrap" id='confirm'>
-                        <label for="confirm-pass">CONFIRM PASSWORD</label>
-                        <input type="password" id='confirm-pass' name='confirm-pass' placeholder=' ' required>
-                        <p class="guideline">*Passwords must match.</p>
-                        <p class='error' id="error-confirm">*Passwords do not match.</p>
-                    </div>
-
-
-                </div>
+                </form>
 
 
             </div>
 
             <button>Create Account</button>
+
+            <script src="script.js"></script>
 </body>
 
 </html>
