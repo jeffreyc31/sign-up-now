@@ -33,7 +33,8 @@
 
                     <div class="input-wrap" id="pass">
                         <label for="pass-word"> PASSWORD</label>
-                        <input type="password" id="pass-word" name="pass-word" placeholder=' ' required>
+                        <input type="password" id="pass-word" name="pass-word" placeholder=' ' minlength="8" maxlength="20" required>
+                        <p id="guideline">*Must be between 8 - 20 characters.</p>
                         <p class='error' id='error-pass'>*Not a valid password.</p>
                     </div>
 

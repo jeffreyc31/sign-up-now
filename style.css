@@ -117,3 +117,7 @@ input:not(:focus):not(:placeholder-shown):invalid {
 #pass-word:focus~#guideline {
     display: block;
 }
+
+#pass-word:not(:focus):not(:placeholder-shown):invalid~#error-pass {
+    display: block;
+}
