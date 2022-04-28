@@ -125,3 +125,15 @@ input:not(:focus):not(:placeholder-shown):invalid {
 #pass-word:not(:focus):not(:placeholder-shown):invalid~#error-pass {
     display: block;
 }
+
+#confirm-pass:not(:focus):not(:placeholder-shown)~#error-confirm {
+    display: block;
+}
+
+#no-error {
+    display: none;
+}
+
+input:valid {
+    border-color: lightgreen;
+}
