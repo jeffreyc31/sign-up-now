@@ -38,6 +38,7 @@ h2 {
 .input-wrap {
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 #card {
