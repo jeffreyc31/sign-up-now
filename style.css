@@ -1,7 +1,13 @@
 body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     flex-direction: row;
     height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
     margin: 0;
     padding: 0;
 }
@@ -22,8 +28,11 @@ body {
 }
 
 #right {
-    background-color: lightgray;
+    background-color: rgb(241, 241, 241);
     width: 100%;
+    max-width: 70vw;
+    display: block;
+    height: auto;
 }
 
 .input-wrap {
@@ -31,11 +40,26 @@ body {
     flex-direction: column;
 }
 
-#form {
+#card {
+    position: relative;
     background-color: #fff;
     padding: 60px;
+    width: max(200px, 100%);
+    max-width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#form {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
     flex-wrap: wrap;
+    gap: 3em;
+    width: 100%;
+    max-width: 400px;
+}
+
+#herotext {
+    padding: 100px 200px 40px 60px;
 }
