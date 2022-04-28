@@ -8,6 +8,11 @@ body {
 }
 
 p {
+    padding: 0;
+    margin: 0;
+}
+
+.error {
     display: none;
     margin: 0;
     padding: 0;
@@ -47,6 +52,8 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    width: 150px;
+    max-width: 150px;
 }
 
 #card {
@@ -91,8 +98,22 @@ input {
     border: 1px solid rgb(211, 211, 211);
     border-radius: 3px;
     height: 18px;
+    width: 150px;
+    max-width: 150px;
+}
+
+#guideline {
+    display: none;
 }
 
 input:not(:focus):not(:placeholder-shown):invalid {
     border-color: red;
+}
+
+#e-mail:not(:focus):not(:placeholder-shown):invalid~#error-mail {
+    display: block;
+}
+
+#pass-word:focus~#guideline {
+    display: block;
 }
