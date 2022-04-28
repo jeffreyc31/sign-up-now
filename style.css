@@ -102,7 +102,7 @@ input {
     max-width: 150px;
 }
 
-#guideline {
+.guideline {
     display: none;
 }
 
@@ -114,7 +114,11 @@ input:not(:focus):not(:placeholder-shown):invalid {
     display: block;
 }
 
-#pass-word:focus~#guideline {
+#pass-word:focus~.guideline {
+    display: block;
+}
+
+#confirm-pass:focus~.guideline {
     display: block;
 }
 
