@@ -16,28 +16,32 @@
     </div>
     <div id="right">
         <h2>Welcome to Jeff's Gym, where you can be the best version of yourself. Sign up now to join the family.</h2>
-        <div id="form">
+        <div id="card">
             <h2>Sign Up</h2>
             <div id="form">
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name" name="first-name" required>
+                <div class="input-wrap" id="user">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
 
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="last-name" required>
+                <div class="input-wrap" id="pass">
+                    <label for="pass-word"> Password</label>
+                    <input type="password" id="pass-word" name="pass-word" required>
+                </div>
 
-                <label for="pass-word"> Password</label>
-                <input type="password" id="pass-word" name="pass-word" required>
+                <div class="input-wrap" id='confirm'>
+                    <label for="confirm-pass">Confirm Password</label>
+                    <input type="password" id='confirm-pass' name='confirm-pass' required>
+                </div>
 
-                <label for="confirm">Confirm Password</label>
-                <input type="password" id='confirm' name='confirm' required>
-
-                <label for="e-mail">E-mail</label>
-                <input type="email" id='e-mail' name='e-mail' required>
+                <div class="input-wrap" id='mail'>
+                    <label for="e-mail">E-mail</label>
+                    <input type="email" id='e-mail' name='e-mail' required>
+                </div>
             </div>
 
             <button>Create Account</button>
         </div>
-    </div>
 </body>
 
 </html>
