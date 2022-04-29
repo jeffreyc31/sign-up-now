@@ -19,9 +19,9 @@ confirmed.addEventListener('keyup', e => {
 function checkMatch(a, b) {
     if (a == b) {
         document.getElementById("confirm-pass").className = 'confirm-ok';
-        document.getElementById('error-confirm').id = 'error-none';
+        document.querySelector('.passmatch').id = 'error-none';
     } else {
         document.getElementById("confirm-pass").className = 'confirm-wrong';
-        document.getElementById('error-none').id = 'error-confirm';
+        document.querySelector('.passmatch').id = 'error-confirm';
     }
 }
