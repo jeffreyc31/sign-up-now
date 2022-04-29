@@ -108,6 +108,8 @@ button {
 
 #herotext {
     padding: 100px 10vw 40px 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
 }
 
 .guideline {
