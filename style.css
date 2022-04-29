@@ -57,6 +57,25 @@ button {
     height: auto;
 }
 
+#logo {
+    margin-top: 10rem;
+    width: 100%;
+    max-width: inherit;
+    height: 5em;
+    background-color: rgba(3, 3, 3, 0.39);
+    font-size: 40px;
+    text-align: center;
+    vertical-align: center;
+    line-height: 5em;
+}
+
+#logo-text {
+    margin: 0;
+    padding: 0 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+}
+
 .input-wrap {
     display: flex;
     flex-direction: column;
