@@ -126,14 +126,24 @@ input:not(:focus):not(:placeholder-shown):invalid {
     display: block;
 }
 
+.confirm-wrong:not(:focus):not(:placeholder-shown) {
+    border-color: red;
+}
+
+.confirm-ok:not(:focus):not(:placeholder-shown) {
+    border-color: lightgreen;
+}
+
 #confirm-pass:not(:focus):not(:placeholder-shown)~#error-confirm {
     display: block;
 }
 
-#no-error {
-    display: block;
+#confirm-pass:not(:focus):not(:placeholder-shown)~#error-none {
+    display: none;
 }
 
-input:valid {
+#pass-word:valid,
+#e-mail:valid,
+#username:valid {
     border-color: lightgreen;
 }

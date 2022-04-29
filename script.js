@@ -1,21 +1,27 @@
-let accButton = document.getElementById("create");
-let message = document.getElementById("no-error");
-let pass;
-let confirmed;
+let pass = document.getElementById('pass-word');
+let confirmed = document.getElementById('confirm-pass');
+let confirmMessage = document.getElementById('no-error')
+let first = '';
+let second = '';
 
-accButton.addEventListener('click', checkPass);
+pass.addEventListener('keyup', e => {
+    first = document.getElementById('pass-word').value;
+    console.log(first);
+    checkMatch(first, second);
+});
 
-function checkPass() {
-    pass = document.getElementById('pass-word').value;
-    confirmed = document.getElementById('confirm-pass').value;
-    console.log(pass);
-    console.log(confirmed);
+confirmed.addEventListener('keyup', e => {
+    second = document.getElementById('confirm-pass').value;
+    console.log(second);
+    checkMatch(first, second);
+});
 
-    if (pass != confirmed) {
-        message.innerText = '*Passwords do not match.';
-        document.getElementById('confirm-pass').style.borderColor = 'red';
+function checkMatch(a, b) {
+    if (a == b) {
+        document.getElementById("confirm-pass").className = 'confirm-ok';
+        document.getElementById('error-confirm').id = 'error-none';
     } else {
-        message.innerText = '';
-        document.getElementById('confirm-pass').style.borderColor = 'lightgreen';
+        document.getElementById("confirm-pass").className = 'confirm-wrong';
+        document.getElementById('error-none').id = 'error-confirm';
     }
 }
