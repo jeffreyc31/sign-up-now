@@ -12,21 +12,30 @@ p {
     margin: 0;
 }
 
-.error {
-    display: none;
-    margin: 0;
-    padding: 0;
-    color: red;
-}
-
 h2 {
     margin: 0px 0px 20px 0px;
     padding: 0;
     font-size: 24px;
 }
 
-#right {
-    background-color: white;
+input {
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 3px;
+    height: 18px;
+    width: 150px;
+    max-width: 150px;
+}
+
+button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin: 60px;
+    width: 150px;
+    height: 50px;
+    background-color: #3d5b44;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
 }
 
 #left {
@@ -82,28 +91,15 @@ h2 {
     padding: 100px 10vw 40px 60px;
 }
 
-button {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    margin: 60px;
-    width: 150px;
-    height: 50px;
-    background-color: #3d5b44;
-    border-radius: 5px;
-    border: none;
-    font-size: 14px;
-}
-
-input {
-    border: 1px solid rgb(211, 211, 211);
-    border-radius: 3px;
-    height: 18px;
-    width: 150px;
-    max-width: 150px;
-}
-
 .guideline {
     display: none;
+}
+
+.error {
+    display: none;
+    margin: 0;
+    padding: 0;
+    color: red;
 }
 
 input:not(:focus):not(:placeholder-shown):invalid {
